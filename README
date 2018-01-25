@@ -1,0 +1,22 @@
+This is the broadcast tree protocol running in ns-3.
+
+1. After downloading the files go to your ns-3 installation directory.
+   The installation directory contains the "ns-allinone-3.26" folder with all ns-3 files.
+   (I will use my version of ns-3, 3.26 for the following guidelines, 
+   other versions will appear for other versions)
+
+
+2. Go to "NS-3_INSTALATION_DIRECTORY"/ns-allinone-3.26/ns-3.26/src and exchange the 
+   current wifi directory for the wifi directory downloaded from this repository.
+
+3. After this, go to "NS-3_INSTALATION_DIRECTORY"/ns-allinone-3.26/ns-3.26/scratch and copy 
+   the file BroadcastTreeProtocolScenario.cc
+
+4. To run the simulation open a terminal in NS-3_INSTALATION_DIRECTORY"/ns-allinone-3.26/ns-3.26
+
+5.a In the terminal copy the following command:
+    ./waf --run  "scratch/BroadcastTreeProtocolScenario"
+
+5.b To run the simulation with gdb instead copy:
+    ./waf --run  "scratch/BroadcastTreeProtocolScenario"  --command-template="gdb --args %s"
+
